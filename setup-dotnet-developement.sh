@@ -5,7 +5,7 @@ echo "== System update =="
 sudo dnf upgrade -y
 
 echo "== Base tools =="
-sudo dnf group install -y "Development Tools"
+sudo dnf install -y @development-tools
 sudo dnf install -y \
     git curl wget unzip htop neovim tmux jq tree \
     openssl ca-certificates zsh make \
